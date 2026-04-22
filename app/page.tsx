@@ -34,7 +34,7 @@ export default async function Home() {
           </a>
 
           <p className="mt-12 text-gray-400">
-            Subscription based • Powered by API-Football
+            Subscription required for full access • Powered by API-Football
           </p>
         </div>
       </div>
@@ -47,19 +47,19 @@ export default async function Home() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex justify-between items-center mb-10">
           <h1 className="text-5xl font-bold text-gray-900">Your Dashboard ⚽</h1>
-          <div>
+          <div className="text-right">
             <p className="text-sm text-gray-500">Logged in as</p>
             <p className="font-medium">{user.email}</p>
           </div>
         </div>
 
-        <div className="bg-white rounded-3xl shadow p-12 text-center">
-          <h2 className="text-3xl font-semibold mb-4">Welcome back!</h2>
-          <p className="text-gray-600 text-lg mb-8">
-            Your personalized Premier League standings and custom features will appear here.
+        <div className="bg-white rounded-3xl shadow p-16 text-center">
+          <h2 className="text-3xl font-semibold mb-4">Welcome to your Football Dashboard</h2>
+          <p className="text-gray-600 text-lg">
+            Your personalized Premier League standings, fixtures, and custom views will appear here.
           </p>
-          <p className="text-sm text-gray-500">
-            (Football data connection is ready — we just need to finalize the API key)
+          <p className="mt-8 text-sm text-gray-500">
+            (The API connection is ready — we're just finalizing the data pull)
           </p>
         </div>
       </div>
