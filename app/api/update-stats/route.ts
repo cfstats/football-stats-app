@@ -2,12 +2,12 @@ import { NextResponse } from 'next/server';
 import { createServerClient } from '@supabase/ssr';
 import { cookies } from 'next/headers';
 
-const API_KEY = process.env.API_FOOTBALL_KEY;
+const API_KEY = process.env.x_apisports_key;
 const BASE_URL = 'https://v3.football.api-sports.io';
 
 export async function GET() {
   if (!API_KEY) {
-    return NextResponse.json({ error: 'API_FOOTBALL_KEY is not set' }, { status: 500 });
+    return NextResponse.json({ error: 'x_apisports_key is not set' }, { status: 500 });
   }
 
   try {
